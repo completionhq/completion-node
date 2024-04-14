@@ -5,8 +5,5 @@
     "module": "ESNext",
     "skipLibCheck": true
   },
-  "exclude": [
-    "./src/promptfactory.cjs.node.ts",
-    "./src/promptfactory.cjs.worker.ts"
-  ]
+  "exclude": ["./src/completion.cjs.node.ts", "./src/completion.cjs.worker.ts"]
 }
