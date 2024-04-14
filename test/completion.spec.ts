@@ -98,7 +98,7 @@ describe('Completion', function() {
       sinon.assert.calledWithExactly(
         consoleErrorStub,
         'Error logging completion:',
-        sinon.match.instanceOf(Error),
+        'Network Error',
       );
     });
   });

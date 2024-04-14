@@ -135,7 +135,11 @@ class Completion {
       });
       console.log('Completion logged successfully:', response.data);
     } catch (error) {
-      console.error('Error logging completion:', error);
+      if (error instanceof Error) {
+        console.error('Error logging completion:', error.message);
+      } else {
+        console.error('Error logging completion.');
+      }
     }
   }
 }

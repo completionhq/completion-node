@@ -1,6 +1,6 @@
 {
   "name": "@completionhq/completion-node",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The Completion Node SDK is a fast and lightweight way to interact with the Completion API.",
   "author": "Completion Team <help@completionhq.com>",
   "license": "MIT",
