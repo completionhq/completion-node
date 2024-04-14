@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.cjs.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "ESNext",
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "./src/promptfactory.cjs.node.ts",
+    "./src/promptfactory.cjs.worker.ts"
+  ]
+}
