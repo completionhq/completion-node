@@ -53,9 +53,13 @@ const promptArguments = {
   name: 'Alice',
 };
 
+const output = "Is there anything I can help you with today?";
+
 await completion.log({
+  templateName: 'greeting',
   promptMessages,
   promptArguments,
+  output,
   model: 'gpt-3.5-turbo',
 });
 ```
@@ -63,8 +67,34 @@ await completion.log({
 ### Log with compiled prompt
 
 ```typescript
+
+const compiledMessages = [
+  {
+    type: 'User',
+    message: 'Hello, how are you Alice?',
+  },
+  {
+    type: 'Assistant',
+    message: 'I am good, thank you. How can I help you today?',
+  },
+];
 await completion.log({
-  compiledPrompt: 'User: Hello, how are you Alice?\nAssistant: I am good, thank you. How can I help you today?',
+  templateName: 'greeting',
+  compiledMessages,
+  output,
+  model: 'gpt-3.5-turbo',
+});
+```
+
+### Use compiled prompt to log
+
+```typescript
+const compiledPrompt = "User: Hello, how are you Alice?\nAssistant: I am good, thank you. How can I help you today?";
+
+await completion.log({
+  templateName: 'greeting',
+  compiledPrompt,
+  output,
   model: 'gpt-3.5-turbo',
 });
 ```
