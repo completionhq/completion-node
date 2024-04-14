@@ -40,11 +40,11 @@ const completion = new Completion({
 
 const promptMessages = [
   {
-    type: 'User',
+    role: 'User',
     message: 'Hello, how are you {name}?',
   },
   {
-    type: 'Assistant',
+    role: 'Assistant',
     message: 'I am good, thank you. How can I help you today?',
   },
 ];
@@ -70,11 +70,11 @@ await completion.log({
 
 const compiledMessages = [
   {
-    type: 'User',
+    role: 'User',
     message: 'Hello, how are you Alice?',
   },
   {
-    type: 'Assistant',
+    role: 'Assistant',
     message: 'I am good, thank you. How can I help you today?',
   },
 ];

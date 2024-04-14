@@ -67,7 +67,7 @@ describe('Completion', function() {
 
       sinon.assert.calledWithExactly(
         axiosStub,
-        'http://testurl.com',
+        'http://testurl.com/monitor/log',
         sinon.match.has('prompt_template', 'Hello, {{name}}'),
         sinon.match.has(
           'headers',

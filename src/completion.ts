@@ -128,7 +128,7 @@ class Completion {
     };
 
     try {
-      const response = await axios.post(this.apiUrl, payload, {
+      const response = await axios.post(`${this.apiUrl}/monitor/log`, payload, {
         headers: {
           Authorization: `Bearer ${this.apiKey}`,
         },
