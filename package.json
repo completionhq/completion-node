@@ -1,12 +1,21 @@
 {
   "name": "@completionhq/completion-node",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The Completion Node SDK is a fast and lightweight way to interact with the Completion API.",
   "author": "Completion Team <help@completionhq.com>",
   "license": "MIT",
   "engines": {
     "node": ">=12.*"
   },
+  "keywords": [
+    "completion-node",
+    "completion",
+    "openai",
+    "anthropic",
+    "prompt monitoring",
+    "prompt tracking",
+    "model cost tracking"
+  ],
   "devDependencies": {
     "@types/chai": "^4.3.4",
     "@types/chai-as-promised": "^7.1.5",
