@@ -38,7 +38,7 @@ const completion = new Completion({
   apiKey: 'abc123',
 });
 
-const promptMessages = [
+const messagesTemplate = [
   {
     role: 'User',
     message: 'Hello, how are you {name}?',
@@ -57,7 +57,7 @@ const output = "Is there anything I can help you with today?";
 
 await completion.log({
   templateName: 'greeting',
-  promptMessages,
+  messagesTemplate,
   promptArguments,
   output,
   model: 'gpt-3.5-turbo',
